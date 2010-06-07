@@ -123,8 +123,6 @@ QVariant SmartFmItemsModel::data(const QModelIndex &index, int role /*= Qt::Disp
         case 4: return m_lstEntries.at(index.row())->value("response_language");
         case 5: return m_lstEntries.at(index.row())->value("response_text");
         }
-    }else if (role == Qt::SizeHintRole){
-        if (index.column() ==
     }
 
     return QVariant();
